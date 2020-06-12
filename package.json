@@ -1,0 +1,19 @@
+{
+    "name": "abp-tool",
+    "version": "0.0.3",
+    "main": "build/index.js",
+    "scripts": {
+        "start:dev": "nodemon",
+        "start": "yarn run build && node build/index.js",
+        "npm-publish": "yarn run build && yarn publish",
+        "build": "rimraf ./build && tsc"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^14.0.13",
+        "nodemon": "^2.0.4",
+        "rimraf": "^3.0.2",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.5"
+    }
+}
